@@ -38,6 +38,7 @@ namespace CrownEduCRM.Admin.Areas.Identity.Pages.Account
         {
             [Required]
             [EmailAddress]
+            [Display(Name = "E-posta")]
             public string Email { get; set; }
 
             [Required]

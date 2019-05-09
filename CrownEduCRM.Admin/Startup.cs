@@ -13,6 +13,7 @@ using Microsoft.EntityFrameworkCore;
 using CrownEduCRM.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using CrownEduCRM.Service;
 
 namespace CrownEduCRM.Admin
 {
@@ -43,6 +44,9 @@ namespace CrownEduCRM.Admin
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddTransient<ICustomerService, CustomerService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -21,10 +21,16 @@ namespace CrownEduCRM.Service
                 unitOfWork.SaveChanges();
             }
         }
-
+        
         public Customer Get(string id)
         {
             return customerRepository.Get(id);
+        }
+
+        public Customer GetByUserName(string userName)
+        {
+            userName = userName.ToLower();
+            return customerRepository.Get(c => c.UserName.ToLower() == userName);
         }
 
         public void Insert(Customer entity)
@@ -42,6 +48,7 @@ namespace CrownEduCRM.Service
 
     public interface ICustomerService
     {
+        Customer GetByUserName(string userName);
         Customer Get(string id);
         void Insert(Customer entity);
         void Update(Customer entity);
