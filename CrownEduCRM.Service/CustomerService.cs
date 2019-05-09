@@ -1,6 +1,7 @@
 ﻿using CrownEduCRM.Data;
 using CrownEduCRM.Model;
 using System;
+using System.Collections.Generic;
 
 namespace CrownEduCRM.Service
 {
@@ -44,10 +45,16 @@ namespace CrownEduCRM.Service
             customerRepository.Update(entity);
             unitOfWork.SaveChanges();
         }
+
+        public IEnumerable<Customer> GetAll()
+        {
+            return customerRepository.GetAll();
+        }
     }
 
     public interface ICustomerService
     {
+        IEnumerable<Customer> GetAll();
         Customer GetByUserName(string userName);
         Customer Get(string id);
         void Insert(Customer entity);

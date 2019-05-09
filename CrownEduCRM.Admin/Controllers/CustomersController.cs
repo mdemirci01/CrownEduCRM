@@ -16,7 +16,8 @@ namespace CrownEduCRM.Admin.Controllers
         }
         public IActionResult Index()
         {
-            return View();
+            var customers = customerService.GetAll();
+            return View(customers);
         }
     }
 }
