@@ -1,15 +1,33 @@
 ﻿@model IEnumerable<CrownEduCRM.Model.Customer>
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Müşteriler";
 }
-<table class="table table-striped table-hover table-bordered">
-    <tr>
-        <th>Id</th><th>Ad</th><th>Soyad</th>
-    </tr>
-    @foreach (var item in Model) {
-    <tr>
-        <td>@item.Id</td><td>@item.FirstName</td><td>@item.LastName</td>
-    </tr>
-    }
+<link rel="stylesheet" href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+<table id="myTable">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Ad</th>
+            <th>Soyad</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.FirstName</td>
+                <td>@item.LastName</td>
+            </tr>
+        }
+    </tbody>
 </table>
+@section scripts {
+    <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#myTable').DataTable();
+        });
+    </script>
+}
 
