@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <UserSecretsId>aspnet-CrownEduCRM.Admin-6ECF895B-BE57-4E50-AE07-026A6DD032DC</UserSecretsId>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\CrownEduCRM.Data\CrownEduCRM.Data.csproj" />
+    <ProjectReference Include="..\CrownEduCRM.Model\CrownEduCRM.Model.csproj" />
+    <ProjectReference Include="..\CrownEduCRM.Service\CrownEduCRM.Service.csproj" />
+  </ItemGroup>
+
+</Project>
