@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrownEduCRM.Model", "CrownEduCRM.Model\CrownEduCRM.Model.csproj", "{818D15D7-4788-4D4D-B800-384980FC94BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrownEduCRM.Model", "CrownEduCRM.Model\CrownEduCRM.Model.csproj", "{818D15D7-4788-4D4D-B800-384980FC94BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrownEduCRM.Data", "CrownEduCRM.Data\CrownEduCRM.Data.csproj", "{AC8D435B-AE75-4935-8E52-191B6B7ADE4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrownEduCRM.Data", "CrownEduCRM.Data\CrownEduCRM.Data.csproj", "{AC8D435B-AE75-4935-8E52-191B6B7ADE4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrownEduCRM.Service", "CrownEduCRM.Service\CrownEduCRM.Service.csproj", "{412973BA-8176-4FB9-A72C-6CA8D4DF3E5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrownEduCRM.Service", "CrownEduCRM.Service\CrownEduCRM.Service.csproj", "{412973BA-8176-4FB9-A72C-6CA8D4DF3E5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrownEduCRM.Admin", "CrownEduCRM.Admin\CrownEduCRM.Admin.csproj", "{237BB188-17F4-4E00-896E-070032ACBC4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrownEduCRM.Admin", "CrownEduCRM.Admin\CrownEduCRM.Admin.csproj", "{237BB188-17F4-4E00-896E-070032ACBC4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrownEduCRM.Tests", "CrownEduCRM.Tests\CrownEduCRM.Tests.csproj", "{4EE5C8AD-4A1C-4FE7-90DE-EDDD9D56F7CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{237BB188-17F4-4E00-896E-070032ACBC4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{237BB188-17F4-4E00-896E-070032ACBC4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{237BB188-17F4-4E00-896E-070032ACBC4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EE5C8AD-4A1C-4FE7-90DE-EDDD9D56F7CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EE5C8AD-4A1C-4FE7-90DE-EDDD9D56F7CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EE5C8AD-4A1C-4FE7-90DE-EDDD9D56F7CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EE5C8AD-4A1C-4FE7-90DE-EDDD9D56F7CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
